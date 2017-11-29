@@ -14,7 +14,6 @@ import (
 	"regexp"
 	"strings"
 	"time"
-	"sort"
 )
 
 func usage() {
