@@ -495,10 +495,6 @@ func (migrationData *MigrationData) WriteTSMPoints(filename string,
 	if len(tsmPoints) == 0 {
 		return nil
 	}
-	//tsmWriter need points to be sorted
-	if !sort.IsSorted(tsmPoints) {
-	    sort.Sort(tsmPoints)
-	}
 
 	// Open tsm file for writing
 	f, err := os.OpenFile(filename, os.O_CREATE|os.O_RDWR, 0666)
