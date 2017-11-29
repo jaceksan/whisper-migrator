@@ -60,7 +60,8 @@ type MigrationData struct {
 }
 
 type TsmPoint struct {
-	key    string
+	//key    string
+	key    []byte
 	values []tsm1.Value
 }
 
