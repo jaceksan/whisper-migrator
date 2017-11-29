@@ -468,7 +468,7 @@ func (migrationData *MigrationData) MapWSPToTSMByWhisperFile(from time.Time, unt
 				Field: tagConfig.Field}
 		}
 
-		tsmPoint.key = CreateTSMKey(mtf)
+		tsmPoint.key = []byte(CreateTSMKey(mtf))
 		tsmPoint.values = make([]tsm1.Value, len(wspPoints))
 		for j, wspPoint := range wspPoints {
 			tsmPoint.values[j] = tsm1.NewValue(int64(wspPoint.Timestamp), wspPoint.Value)
