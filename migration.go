@@ -479,7 +479,7 @@ func (migrationData *MigrationData) MapWSPToTSMByWhisperFile(from time.Time, unt
 }
 
 func (migrationData *MigrationData) GetTSMFileName(shard ShardInfo) string {
-	retentionPolicy := migrationData.retentionPolicy
+	retentionPolicy := "/" + migrationData.retentionPolicy + "/"
 	shardName := shard.id.String() + "/"
 	filename := "000000001-000000002.tsm" // TODO:..
 	filePath := migrationData.influxDataDir + "/" + migrationData.dbName +
