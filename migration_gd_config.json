@@ -8,7 +8,7 @@
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
       {"tagkey": "host", "tagvalue": "#host"}
     ],
-    "field": "group"
+    "field": "value"
   },
   {
     "pattern": "vertica.#datacenter.#cluster_id.#sub_cluster.#host.#group.#measurement",
@@ -19,6 +19,6 @@
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
       {"tagkey": "host", "tagvalue": "#host"}
     ],
-    "field": "group"
+    "field": "value"
   }
 ]
