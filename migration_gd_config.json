@@ -1,25 +1,25 @@
 [
   {
-    "pattern": "collectd.#datacenter.#cluster_id.#sub_cluster.#host.#group.#measurement",
+    "pattern": "collectd.#datacenter.#cluster_id.#sub_cluster.#host.#metric.#measurement",
     "measurement": "#measurement",
     "tags": [
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
       {"tagkey": "cluster_id", "tagvalue": "#cluster_id"},
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
       {"tagkey": "host", "tagvalue": "#host"},
-      {"tagkey": "group", "tagvalue": "#group"}
+      {"tagkey": "metric", "tagvalue": "#metric"}
     ],
     "field": "value"
   },
   {
-    "pattern": "vertica.#datacenter.#cluster_id.#sub_cluster.#host.#group.#measurement",
+    "pattern": "vertica.#datacenter.#cluster_id.#sub_cluster.#host.#metric.#measurement",
     "measurement": "#measurement",
     "tags": [
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
       {"tagkey": "cluster_id", "tagvalue": "#cluster_id"},
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
       {"tagkey": "host", "tagvalue": "#host"},
-      {"tagkey": "group", "tagvalue": "#group"}
+      {"tagkey": "metric", "tagvalue": "#metric"}
     ],
     "field": "value"
   }
