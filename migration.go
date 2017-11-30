@@ -497,7 +497,7 @@ func (migrationData *MigrationData) WriteTSMPoints(filename string,
 	}
 	// sort tsmPoints by key to prevent error "panic: keys must be added in sorted order"
 	sort.Slice(tsmPoints[:], func(i, j int) bool {
-        return tsmPoints[i].key < tsmPoints[j].key
+        return bytes.Compare(tsmPoints[i].key, tsmPoints[j].key)
     })
 
 	// Open tsm file for writing
