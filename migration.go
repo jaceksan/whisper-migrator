@@ -473,7 +473,7 @@ func (migrationData *MigrationData) MapWSPToTSMByWhisperFile(from time.Time, unt
 		tsmPoint.key = []byte(CreateTSMKey(mtf))
 		tsmPoint.values = make([]tsm1.Value, len(wspPoints))
 		for j, wspPoint := range wspPoints {
-			tsmPoint.values[j] = tsm1.NewValue(int64(wspPoint.Timestamp), wspPoint.Value)
+			tsmPoint.values[j] = tsm1.NewValue(int64(wspPoint.Timestamp) * 1000000000, wspPoint.Value)
 		}
 		tsmPoints = append(tsmPoints, tsmPoint)
 	}
