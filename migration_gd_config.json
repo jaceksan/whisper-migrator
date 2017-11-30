@@ -6,7 +6,8 @@
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
       {"tagkey": "cluster_id", "tagvalue": "#cluster_id"},
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
-      {"tagkey": "host", "tagvalue": "#host"}
+      {"tagkey": "host", "tagvalue": "#host"},
+      {"tagkey": "group", "tagvalue": "#group"}
     ],
     "field": "value"
   },
@@ -17,7 +18,8 @@
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
       {"tagkey": "cluster_id", "tagvalue": "#cluster_id"},
       {"tagkey": "sub_cluster", "tagvalue": "#sub_cluster"},
-      {"tagkey": "host", "tagvalue": "#host"}
+      {"tagkey": "host", "tagvalue": "#host"},
+      {"tagkey": "group", "tagvalue": "#group"}
     ],
     "field": "value"
   }
