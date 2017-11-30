@@ -1,6 +1,6 @@
 [
   {
-    "pattern": "collectd.#datacenter.#cluster_id.#sub_cluster.#host.#measurement.#group",
+    "pattern": "collectd.#datacenter.#cluster_id.#sub_cluster.#host.#group.#measurement",
     "measurement": "#measurement",
     "tags": [
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "pattern": "vertica.#datacenter.#cluster_id.#sub_cluster.#host.#measurement.#group",
+    "pattern": "vertica.#datacenter.#cluster_id.#sub_cluster.#host.#group.#measurement",
     "measurement": "#measurement",
     "tags": [
       {"tagkey": "datacenter", "tagvalue": "#datacenter"},
